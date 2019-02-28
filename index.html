@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Coloco la mía debajo para que prevalezca sobre la de BootStrap -->
+    <link rel="stylesheet" href="css/miestilo.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <!-- Este script es para habilitar el Tooltips de BootStrap -->
+    <script>$(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })</script>
+    <title>Senderismo en Arroyo de la Miel</title>
+</head>
+
+<body>
+
+    <!--BARRA DE NAVEGACIÓN-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+        <!-- ESTE ES EL LOGO DEL MENÚ-->
+        <a class="navbar-brand" href="#"><img src="img/logoS.png" width="60"><b>Senderismo A.M.</b></a>
+
+        <!-- ESTE ES EL MENU HAMBURGUESA-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#bene">¿Beneficios?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#donde">Rutas sugeridas</a>
+                </li>
+
+                <!-- ESTE ES  UN DROPDOWN PARA SUBMENU DE NAVEGACIÓN-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Añadidos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#conse">Consejos</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#info">Info</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ESTE ES EL CARRUSEL-->
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Carousel1.jpg" class="d-block w-100" alt="Comentario imagen 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p>Zona teleférico</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Carousel2.jpg" class="d-block w-100" alt="Comentario imagen 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p>Mirador del lobo</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Carousel3.jpg" class="d-block w-100" alt="Comentario imagen 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p>Calamorro</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Carousel4.jpg" class="d-block w-100" alt="Comentario imagen 4">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p>Mina teleférico</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Carousel5.jpg" class="d-block w-100" alt="Comentario imagen 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p>Repetidor de Mijas</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- BIENVENIDA CON JUMBOTRON. SIRVE PARA PONER ALGO LLAMATIVO-->
+    <section id="jumbo">
+        <div class="jumbotron">
+            <h2 class="display-4">Bienvenidos a la página de los fans del senderismo del Arroyo de la Miel</h2>
+            <p class="lead">Descubrirás la maravillosa experiencia de conocer la localidad como nunca antes</p>
+            <hr class="my-4">
+            <p>Aviso para navegantes: Engancha! ;).</p>
+
+            <!-- BOTON PARA LALLAMADA AL MODAL -->
+            <a class="btn btn-primary btn-lg" href="#" role="button" data-toggle="modal" data-target="#modal1">Saber
+                más</a>
+
+            <!-- MODAL DE BOOTSTRAP -->
+            <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">Tu inspiración ha llegado</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Cuando sientas la brisa en la cara, esa sensación hormigueante que te recorre el cuerpo
+                            entero, es cuando conocerás y sabrás de primera mano que esta es la actividad que
+                            estabas buscando
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <section id="bene">
+        <h5 class="display-4"><br>Beneficios de practicar senderismo<br></h5>
+        <div class="card-deck mt-8">
+            <div class="card">
+                <img class="card-img-top" src="img/Cdeck1.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Beneficia el sistema circulatorio</h5>
+                    <p class="card-text">El senderismo (trekking si lo practicamos en la montaña) es una actividad
+                        aeróbica que beneficia a nuestro sistema circulatorio. Practicando senderismo fortalecemos
+                        nuestro corazón, algo que puede ayudarnos a prevenir posibles patologías cardíacas y a
+                        mantener nuestra presión arterial en unos valores óptimos.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/Cdeck2.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Fortalece músculos y huesos</h5>
+                    <p class="card-text">Nuestros músculos y huesos también se ven beneficiados por esta actividad.
+                        En el caso de los músculos, los que más trabajan son los del tren inferior haciendo especial
+                        hincapié en cuádriceps y glúteos, sobre todo si en nuestra ruta incluimos subidas y bajadas.
+                        Los huesos también se ven fortalecidos y aumentan su densidad ósea, algo especialmente
+                        importante en el caso de las mujeres de cara a prevenir la osteoporosis.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="img/Cdeck3.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Limpia los pulmones</h5>
+                    <p class="card-text">Al tratarse de una actividad al aire libre que generalmente se practica en
+                        el
+                        campo o en la montaña, el senderismo además nos anima a respirar aire mucho más puro que el
+                        de
+                        la ciudad y a evadirnos de nuestras numerosas obligaciones diarias, dándonos un respiro
+                        (nunca mejor dicho) tanto físico como mental.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RUTAS SUGERIDAS REALIZADO EN GRID -->
+    <section id="donde">
+        <div class="lugares">
+            <h5 class="display-4"><br>Rutas sugeridas para empezar<br></h5>
+            <div class="card-deck mt-8">
+                <div class="card">
+                    <img src="img/ruta1.PNG" class="card-img-top rounded" alt="Descripcion 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Mirador Cañada del Lobo desde Arroyo de la Miel </h5>
+                        <p class="card-text">Iniciamos la ruta por el curso seco del Arroyo de los Gatos. Subiendo el
+                            arroyo
+                            llegaremos al Llano de Avefrías y girando a la izquierda seguiremos por el sendero PR-A-172
+                            Puertos de Torremolinos. Este sendero desemboca en la parte alta del carril asfaltado hasta
+                            llegar al mirador. Una vez visitado el mirador de la Cañada del Lobo y disfrutado de las
+                            estupendas vistas que nos ofrece volvemos sobre nuestros pasos.
+                        </p>
+                        <p class="card-text"><small class="text-muted">Dificultad: Moderada</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/Ruta2.PNG" class="card-img-top" alt="Descripcion 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Subida al Repetidor desde Benalmadena</h5>
+                        <p class="card-text">Toda la ruta es muy bonita y se lleva bastante bien.
+                            La baja desde la ermita es recomendable hacerla por el mismo sitio por donde se sube ya
+                            que por donde hemos bajado es una pista de descenso de mtb y hay muchísimas piedras sueltas
+                            y es muy fácil doblarse un tobillo.</p>
+                        <p class="card-text"><small class="text-muted">Dificultad: Facil</small></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/Ruta3.PNG" class="card-img-top" alt="Descripcion 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Subida al teleférico desde Benalmadena</h5>
+                        <p class="card-text">Recorrido suave aunque las cuestas que tendrás que superar en los dos
+                            primeros
+                            kilómetros te puedan hacer pensar lo contrario.
+                            Recomiendo hacer la subida por el mismo camino que tome en la bajada ya que el primero es
+                            muy exigente y en ningún caso se recomienda realizarlo en bicicleta ya que la ruta es muy
+                            estrecha
+                            e inapropiada. </p>
+                        <p class="card-text"><small class="text-muted">Dificultad: Moderada</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--COLLAPSE DE BOOTSTRAP TIPO ACORDEON -->
+    <section id="conse">
+        <div class="con">
+            <h5 class="display-4"><br>Consejos para practicar esta aficción<br></h5>
+            <div class="container">
+                <div class="accordion" id="accordionExample">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                                <button class="btn btn-primary" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Planifica la salida con antelación
+                                </button>
+                            </h2>
+                        </div>
+                        <!-- Collapse-show indica cual se muestra al principio -->
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                No se trata de salir al campo y echar a andar para ver hasta dónde llegamos. Es
+                                necesario
+                                que tengamos en cuenta quiénes vamos a participar en la salida (especialmente si
+                                contamos
+                                en el grupo con personas mayores o con niños) y que elijamos una ruta adecuada para
+                                todos.
+                                No hace falta que sea demasiado dura ni muy larga, puesto que el objetivo de este tipo
+                                de
+                                salidas es, más que nada, disfrutar del momento.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Lleva contigo agua y comida
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Si optamos por realizar una ruta ya establecida seguramente encontremos fuentes o
+                                riachuelos
+                                por el camino donde podamos abastecernos de agua. Pero nunca está de más llevar con
+                                nosotros
+                                nuestras propias provisiones. Para comer por el camino son muy prácticos los frutos
+                                secos
+                                como
+                                nueces, almendras o avellanas, que nos darán energía y nos mantendrán saciados durante
+                                bastante
+                                tiempo.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Protégete del sol de forma adecuada
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Comienzan a llegar los días de mucho calor y, si salimos al campo o a la montaña sin
+                                protección
+                                solar, podemos terminar volviendo a casa con quemaduras o con una insolación. Protege
+                                siempre tu
+                                cabeza con una gorra o un pañuelo y haz lo mismo siempre con niños y personas mayores.
+                                Aplica
+                                protección solar en todas las partes del cuerpo que queden al aire haciendo especial
+                                hincapié en
+                                hombros, orejas, nariz y escote, donde la piel es delicada y está muy expuesta al sol.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Lleva siempre contigo un pequeño botiquín
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                No ocupa apenas espacio en la mochila y puede ser de mucha utilidad en el caso de
+                                pequeñas
+                                heridas. Asegúrate de que en un bolsa impermeable llevas tiritas, esparadrapo, unas
+                                gasas
+                                estériles y material para limpiar heridas como agua oxigenada o betadine. Tampoco está
+                                de
+                                más meter unas pastillas o geles de glucosa o unas pastillas de sales.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    No te olvides el móvil
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                siempre pensamos que no nos puede pasar nada, pero es mejor prevenir que curar. Lleva
+                                siempre
+                                contigo tu teléfono móvil para poder llamar en caso de emergencia: si nos perdemos, si
+                                un
+                                compañero o nosotros mismos sufre una caída o lesión o ante cualquier imprevisto lo
+                                mejor es
+                                avisar a los servicios de emergencia para que ellos nos digan cómo debemos actuar. Una
+                                batería
+                                de repuesto totalmente cargada también es conveniente.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION DE INFORMACION-->
+    <section id="info">
+        <div class="container-fluid bg-dark text-light">
+            <h5 class="display-4"><br>Información adiccional<br></h5>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 text-center">
+                    <dl class="m-5">
+                        <dt class="Display">Dirección:</dt>
+                        <dd>Calle La higuera</dd>
+                        <dt>Correo:</dt>
+                        <dd>agscm2@gmail.com</dd>
+                        <dt>Teléfono:</dt>
+                        <dd>655 243 886</dd>
+                        <dt>Redes Sociales:</dt>
+                        <dd><a href="https://github.com/Alegarse" target="blank"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/alegarse" target="blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://twitter.com/Alegarse" target="blank"><i class="fab fa-twitter-square"></i></a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="col-sm-12 col-md-6  embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item p-5"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1132.4111479928742!2d-4.530314043853634!3d36.603696105991474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72fc849a8bb12f%3A0xac8e645f45efb0cf!2zMzbCsDM2JzE0LjAiTiA0wrAzMSc0Ny4wIlc!5e0!3m2!1ses!2ses!4v1551291693043"
+                        width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORMULARIO DE CONTACTO -->
+    <footer id="contacto">
+        <h5 class="display-4"><br>Contacto y sugerencias<br></h5>
+        <div class="container">
+            <form action=mailto:agscm2@gmail.com? Subject=Contacto%20desde%20la%20web%20de%20senderismo>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Nombre y apellidos">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Contraseña">
+                    </div>
+                    <div class="col">
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>Principiante</option>
+                            <option>Algo entiendo</option>
+                            <option>De fines de semana</option>
+                            <option>Casi guia de senderismo</option>
+                            <option>El senderismo es mi vida</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                    placeholder="Sugerencias de rutas o comentarios"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Acepto enviar mis datos</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        </form>
+        </div>
+    </footer>
+
+</body>
+
+</html>
